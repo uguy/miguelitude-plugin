@@ -6,22 +6,14 @@
         <version>1.434</version>
     </parent>
 
-    <groupId>org.jvnet.hudson.plugins</groupId>
-    <artifactId>chucknorris</artifactId>
-    <version>0.5-SNAPSHOT</version>
-    <name>ChuckNorris Plugin</name>
-    <description>Displays a picture of Chuck Norris (instead of Jenkins the butler) and a random Chuck Norris 'The Programmer' fact on each build page.</description>
-    <url>http://wiki.jenkins-ci.org/display/JENKINS/ChuckNorris+Plugin</url>
+    <groupId>org.miguelitude.jenkins.plugins</groupId>
+    <artifactId>miguelitude</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>Miguelitude Plugin</name>
+    <description>Affiche une image de votre  pingouin préféré (à la place de Jenkins the butler) et une de ses citations choisie au hasard sur chaque page de build.</description>
+    <url>http://wiki.jenkins-ci.org/display/JENKINS/miguelitude+Plugin</url>
     <packaging>hpi</packaging>
 
-    <developers>
-        <developer>
-            <id>cliffano</id>
-            <name>Cliffano Subagio</name>
-            <email>blah@cliffano.com</email>
-            <timezone>+10</timezone>
-        </developer>
-    </developers>
     <licenses>
         <license>
             <name>MIT License</name>
@@ -33,7 +25,7 @@
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
-            <version>1.7</version>
+            <version>1.9.5</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -125,10 +117,10 @@
         </plugins>
     </reporting>
     
-    <scm>
-        <connection>scm:git:git://github.com/jenkinsci/chucknorris-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:jenkinsci/chucknorris-plugin.git</developerConnection>
-        <url>https://github.com/jenkinsci/chucknorris-plugin</url>
+    <scm>    
+        <connection>scm:git:git://github.com/uguy/miguelitude-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com/uguy/miguelitude-plugin.git</developerConnection>
+        <url>https://github.com/uguy/miguelitude-plugin.git</url>
     </scm>
 
     <pluginRepositories>
