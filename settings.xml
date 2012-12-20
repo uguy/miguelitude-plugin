@@ -5,6 +5,11 @@
 		
 	<mirrors>
 		<mirror>
+			<id>repo.cloudbees.com</id>
+			<url>http://repo.cloudbees.com/content/groups/public/</url>
+			<mirrorOf>*,!repo.jenkins-ci.org</mirrorOf>		 
+		</mirror>
+		<mirror>
 		  <id>repo.jenkins-ci.org</id>
 		  <url>http://repo.jenkins-ci.org/public/</url>
 		  <mirrorOf>m.g.o-public</mirrorOf>
