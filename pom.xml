@@ -21,6 +21,10 @@
 			<url>LICENSE.txt</url>
 		</license>
 	</licenses>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 
 	<dependencies>
 		<dependency>
@@ -44,7 +48,7 @@
 			<url>http://repo.jenkins-ci.org/public/</url>
 		</pluginRepository>
 	</pluginRepositories>
-
+		
 	<build>
 		<plugins>
 			<plugin>
@@ -118,7 +122,7 @@
 			</plugin>
 		</plugins>
 	</reporting>
-
+	
 	<scm>
 		<connection>scm:git:git://github.com/uguy/miguelitude-plugin.git</connection>
 		<developerConnection>scm:git:git@github.com/uguy/miguelitude-plugin.git</developerConnection>
