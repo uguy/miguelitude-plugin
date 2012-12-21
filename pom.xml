@@ -12,7 +12,7 @@
 	<packaging>hpi</packaging>
 
 	<name>Miguelitude Plugin</name>
-	<description>Affiche une image de votre  pingouin préféré (à la place de Jenkins the butler) et une de ses citations choisie au hasard sur chaque page de build.</description>
+	<description>Miguelitude affiche une image de votre  pingouin préféré (à la place de Jenkins the butler) et une de ses citations choisie au hasard sur chaque page de build.</description>
 	<url>http://wiki.jenkins-ci.org/display/JENKINS/miguelitude+Plugin</url>
 
 	<licenses>
@@ -21,12 +21,17 @@
 			<url>LICENSE.txt</url>
 		</license>
 	</licenses>
-	
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version> 13.0.1</version>
+		</dependency>
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
@@ -35,7 +40,7 @@
 		</dependency>
 	</dependencies>
 
-	<!-- get every artifact through repo.jenkins-ci.org, which proxies all the artifacts that we need -->	
+	<!-- get every artifact through repo.jenkins-ci.org, which proxies all the artifacts that we need -->
 	<repositories>
 		<repository>
 			<id>repo.jenkins-ci.org</id>
@@ -48,7 +53,7 @@
 			<url>http://repo.jenkins-ci.org/public/</url>
 		</pluginRepository>
 	</pluginRepositories>
-		
+
 	<build>
 		<plugins>
 			<plugin>
@@ -122,7 +127,7 @@
 			</plugin>
 		</plugins>
 	</reporting>
-	
+
 	<scm>
 		<connection>scm:git:git://github.com/uguy/miguelitude-plugin.git</connection>
 		<developerConnection>scm:git:git@github.com/uguy/miguelitude-plugin.git</developerConnection>
