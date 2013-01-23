@@ -133,6 +133,13 @@
 		<developerConnection>scm:git:git@github.com/uguy/miguelitude-plugin.git</developerConnection>
 		<url>https://github.com/uguy/miguelitude-plugin.git</url>
 	</scm>
+	
+	<distributionManagement>
+        <repository>
+            <id>bintray-maven-repo</id>
+            <url>https://api.bintray.com/maven/uguy/maven-repo/miguelitude</url>
+        </repository>
+    </distributionManagement>
 
 </project>  
 
